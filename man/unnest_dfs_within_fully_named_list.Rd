@@ -4,10 +4,12 @@
 \alias{unnest_dfs_within_fully_named_list}
 \title{Unnest data.frames within fully named list}
 \usage{
-unnest_dfs_within_fully_named_list(x)
+unnest_dfs_within_fully_named_list(x, ...)
 }
 \arguments{
 \item{x}{A list of data.frames}
+
+\item{...}{parameters passed to data.table::rbindlist}
 }
 \description{
 Unnest data.frames within fully named list
@@ -25,5 +27,12 @@ x <- list(
   )
 )
 print(x)
-unnest_dfs_within_fully_named_list(x)
+splutil::unnest_dfs_within_fully_named_list(x)
+
+x <- list(
+  data.frame("v1"=1),
+  data.frame("v3"=50)
+)
+print(x)
+splutil::unnest_dfs_within_fully_named_list(x, fill = T)
 }

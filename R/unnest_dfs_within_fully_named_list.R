@@ -1,5 +1,6 @@
 #' Unnest data.frames within fully named list
 #' @param x A list of data.frames
+#' @param ... parameters passed to data.table::rbindlist
 #' @examples
 #' x <- list(
 #'   list(
@@ -13,10 +14,18 @@
 #'   )
 #' )
 #' print(x)
-#' unnest_dfs_within_fully_named_list(x)
+#' splutil::unnest_dfs_within_fully_named_list(x)
+#'
+#' x <- list(
+#'   data.frame("v1"=1),
+#'   data.frame("v3"=50)
+#' )
+#' print(x)
+#' splutil::unnest_dfs_within_fully_named_list(x, fill = T)
 #' @export
-unnest_dfs_within_fully_named_list <- function(x){
+unnest_dfs_within_fully_named_list <- function(x, ...){
   if(!inherits(x, "list")) return(NULL)
+  if(all_list_elements_null_or_df(x)) return(list("data" = rbindlist(x, ...)))
   if(!all_list_elements_null_or_fully_named_list(x)) stop("All list elements must be either null or a fully named list")
 
   list_names <- lapply(x, function(y) names(y))
@@ -30,7 +39,7 @@ unnest_dfs_within_fully_named_list <- function(x){
     for(j in seq_along(x)){
       retval[[i]][[j]] <- x[[j]][[list_names[i]]]
     }
-    retval[[i]] <- rbindlist(retval[[i]])
+    retval[[i]] <- rbindlist(retval[[i]], ...)
   }
   names(retval) <- list_names
 

@@ -6,14 +6,14 @@
 \usage{
 unnest_dfs_within_fully_named_list(
   x,
-  returned_name_when_x_is_unnested = "data",
+  returned_name_when_dfs_are_unnested = "data",
   ...
 )
 }
 \arguments{
 \item{x}{A list of fully named lists (which then contain data.frames)}
 
-\item{returned_name_when_x_is_unnested}{When x is a single list of data.frames, what name should be returned?}
+\item{returned_name_when_dfs_are_unnested}{When x is a single list of data.frames, what name should be returned?}
 
 \item{...}{parameters passed to data.table::rbindlist}
 }
@@ -44,5 +44,5 @@ x <- list(
   data.frame("v3"=50)
 )
 print(x)
-splutil::unnest_dfs_within_fully_named_list(x, returned_name_when_x_is_unnested = "NAME", fill = T)
+splutil::unnest_dfs_within_fully_named_list(x, returned_name_when_dfs_are_unnested = "NAME", fill = T)
 }

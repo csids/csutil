@@ -22,6 +22,24 @@ knitr::opts_chunk$set(
 splutil::split_equal(c(1:11), size = 3)
 ```
 
+## Unnesting data.frames
+
+```{r}
+x <- list(
+  list(
+    "a" = data.frame("v1"=1),
+    "b" = data.frame("v2"=3)
+  ),
+  list(
+    "a" = data.frame("v1"=10),
+    "b" = data.frame("v2"=30),
+    "d" = data.frame("v3"=50)
+  )
+)
+print(x)
+splutil::unnest_dfs_within_fully_named_list(x)
+```
+
 ## Describing lists
 
 ```{r}

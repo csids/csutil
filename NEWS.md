@@ -5,3 +5,4 @@
 - all_list_elements_null_or_df (Are all elements in a list null or data.frames?)
 - all_list_elements_null_or_list (Are all elements in a list null or lists?)
 - all_list_elements_null_or_fully_named_list (Are all elements in a list null or fully named lists?)
+- unnest_dfs_within_fully_named_list (Unnest data.frames within fully named list)

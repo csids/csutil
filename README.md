@@ -1,10 +1,10 @@
-# PACKAGE <a href="https://docs.sykdomspulsen.no/PACKAGE"><img src="man/figures/logo.png" align="right" width="120" /></a>
+# splutil <a href="https://docs.sykdomspulsen.no/splutil"><img src="man/figures/logo.png" align="right" width="120" /></a>
 
 ## Overview 
 
-[PACKAGE](https://docs.sykdomspulsen.no/PACKAGE) is a system to help you organize projects. Most analyses have three (or more) main sections: code, results, and data, each with different requirements (version control/sharing/encryption). You provide folder locations and 'org' helps you take care of the details.
+[splutil](https://docs.sykdomspulsen.no/splutil) contains helpful functions to help with common base R problems.
 
-Read the introduction vignette [here](http://docs.sykdomspulsen.no/PACKAGE/articles/PACKAGE.html) or run `help(package="PACKAGE")`.
+Read the introduction vignette [here](http://docs.sykdomspulsen.no/splutil/articles/splutil.html) or run `help(package="splutil")`.
 
 ## splverse
 
@@ -30,6 +30,6 @@ Save the file and restart R.
 You can now install [splverse](https://docs.sykdomspulsen.no/packages) packages from our [drat repository](https://docs.sykdomspulsen.no/drat).
 
 ```
-install.packages("PACKAGE")
+install.packages("splutil")
 ```
 

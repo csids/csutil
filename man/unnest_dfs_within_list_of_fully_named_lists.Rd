@@ -44,5 +44,5 @@ x <- list(
   data.frame("v3"=50)
 )
 print(x)
-splutil::unnest_dfs_within_list_of_fully_named_lists(x, returned_name_when_dfs_are_not_nested = "NAME", fill = T)
+splutil::unnest_dfs_within_list_of_fully_named_lists(x, returned_name_when_dfs_are_not_nested = "NAME", fill = TRUE)
 }

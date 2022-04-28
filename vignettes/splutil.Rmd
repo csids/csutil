@@ -37,7 +37,7 @@ x <- list(
   )
 )
 print(x)
-splutil::unnest_dfs_within_fully_named_list(x)
+splutil::unnest_dfs_within_list_of_fully_named_lists(x)
 ```
 
 ## Describing lists

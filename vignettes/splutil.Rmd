@@ -19,8 +19,8 @@ knitr::opts_chunk$set(
 ## Splitting
 
 ```{r}
-easy_split(letters[1:20], size_of_each_group = 3)
-easy_split(letters[1:20], number_of_groups = 3)
+splutil::easy_split(letters[1:20], size_of_each_group = 3)
+splutil::easy_split(letters[1:20], number_of_groups = 3)
 ```
 
 ## Unnesting data.frames

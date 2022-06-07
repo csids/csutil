@@ -1,17 +1,16 @@
 Package: splutil
-Title: Organising Projects
-Version: 2020.5.25
+Title: Utility Functions for Common Base-R Problems
+Version: 2022.6.7
 Authors@R: c(
-  person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")),
+  person(c("Richard","Aubrey"), "White", email = "sykdomspulsen@fhi.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")),
   person(given = "Folkehelseinstituttet", role = c("cph"))
   )
-Description: A system to help you organize projects. Most analyses have three (or more) main sections: code, results, and data, each with different requirements (version control/sharing/encryption). You provide folder locations and 'org' helps you take care of the details.
+Description: Utility functions that help with common base-R problems.
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
-URL: https://docs.sykdomspulsen.no/splutil, https://github.com/sykdomspulsen-org/splutil
+URL: https://docs.sykdomspulsen.no/splutil/, https://github.com/sykdomspulsen-org/splutil
 BugReports: https://github.com/sykdomspulsen-org/splutil/issues
 Encoding: UTF-8
-LazyData: true
 Imports: data.table,
     magrittr,
     ggplot2

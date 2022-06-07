@@ -1,16 +1,9 @@
-## Resubmission
-
-This is a resubmission. In this version I have:
-
-- Omitted all redundancies like "R Functions" in my title 
-- Added more details about my package in my Description text
-- Fixed unexecutable code in man/InitialiseProject.Rd
-
+## Submission
 
 ## Test environments
-* local Debian 9.5 install, R 3.5.2
-* ubuntu 14.04 (on travis-ci), R 3.5.2
-* win-builder (devel and release)
+
+* local Ubuntu 20.04 install, R 4.1.3
+* rhub
 
 ## R CMD check results
 
@@ -19,7 +12,7 @@ This is a resubmission. In this version I have:
 Notes: 
 
 * checking CRAN incoming feasibility ... NOTE
-Maintainer: 'Richard White <w@rwhite.no>'
+Maintainer: 'Richard Aubrey White <sykdomspulsen@fhi.no>'
 
 New submission
 

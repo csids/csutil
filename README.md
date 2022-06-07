@@ -1,8 +1,8 @@
-# splutil <a href="https://docs.sykdomspulsen.no/splutil"><img src="man/figures/logo.png" align="right" width="120" /></a>
+# splutil <a href="https://docs.sykdomspulsen.no/splutil/"><img src="man/figures/logo.png" align="right" width="120" /></a>
 
 ## Overview 
 
-[splutil](https://docs.sykdomspulsen.no/splutil) contains helpful functions to help with common base R problems.
+[splutil](https://docs.sykdomspulsen.no/splutil/) contains helpful functions to help with common base-R problems.
 
 Read the introduction vignette [here](http://docs.sykdomspulsen.no/splutil/articles/splutil.html) or run `help(package="splutil")`.
 
@@ -27,7 +27,7 @@ options(
 
 Save the file and restart R.
 
-You can now install [splverse](https://docs.sykdomspulsen.no/packages) packages from our [drat repository](https://docs.sykdomspulsen.no/drat).
+You can now install [splverse](https://docs.sykdomspulsen.no/packages) packages from our [drat repository](https://docs.sykdomspulsen.no/drat/).
 
 ```
 install.packages("splutil")

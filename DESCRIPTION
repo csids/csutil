@@ -1,11 +1,16 @@
 Package: splutil
-Title: Utility Functions for Common Base-R Problems
-Version: 2022.6.7
+Title: Utility Functions for Common Base-R Problems Relating to Lists
+Version: 2022.6.8
 Authors@R: c(
   person(c("Richard","Aubrey"), "White", email = "sykdomspulsen@fhi.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")),
   person(given = "Folkehelseinstituttet", role = c("cph"))
   )
-Description: Utility functions that help with common base-R problems.
+Description: Utility functions that help with common base-R problems relating to lists.
+    Lists in base-R are very flexible. This package provides functions to quickly and easily
+    characterize types of lists. That is, to identify if all elements in a list
+    are null, data.frames, lists, or fully named lists. Other functionality is provided
+    for the handling of lists, such as the easy splitting of lists into equally sized
+    groups, and the unnesting of data.frames within fully named lists.
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
 URL: https://docs.sykdomspulsen.no/splutil/, https://github.com/sykdomspulsen-org/splutil

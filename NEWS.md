@@ -1,3 +1,11 @@
+# splutil 2022.6.8
+
+- Submitted to CRAN
+- all_list_elements_null_or_df renamed to is_all_list_elements_null_or_df
+- all_list_elements_null_or_list renamed to is_all_list_elements_null_or_list
+- all_list_elements_null_or_fully_named_list renamed to is_all_list_elements_null_or_fully_named_list
+- split_equal renamed to easy_split
+
 # splutil 2022.4.28
 
 - split_equal (Split a vector into a list with equal sized elements)

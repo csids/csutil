@@ -34,12 +34,12 @@
 #' @export
 unnest_dfs_within_list_of_fully_named_lists <- function(x, returned_name_when_dfs_are_not_nested = "data", ...){
   if(!inherits(x, "list")) return(NULL)
-  if(all_list_elements_null_or_df(x)){
+  if(is_all_list_elements_null_or_df(x)){
     retval <- list(rbindlist(x, ...))
     names(retval) <- returned_name_when_dfs_are_not_nested
     return(retval)
   }
-  if(!all_list_elements_null_or_fully_named_list(x)) stop("All list elements must be either null or a fully named list")
+  if(!is_all_list_elements_null_or_fully_named_list(x)) stop("All list elements must be either null or a fully named list")
 
   list_names <- lapply(x, function(y) names(y))
   list_names <- sort(unique(unlist(list_names)))

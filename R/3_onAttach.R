@@ -7,11 +7,11 @@
         1
       }
     )
-  
+
   packageStartupMessage(paste0(
     "splutil ",
     version,
     "\n",
-    "https://docs.sykdomspulsen.no/splutil"
+    "https://docs.sykdomspulsen.no/splutil/"
   ))
 }

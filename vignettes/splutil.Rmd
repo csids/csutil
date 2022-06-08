@@ -47,12 +47,12 @@ splutil::unnest_dfs_within_list_of_fully_named_lists(x)
 splutil::is_fully_named_list(list(1))
 splutil::is_fully_named_list(list("a"=1))
 
-splutil::all_list_elements_null_or_df(list(data.frame()))
-splutil::all_list_elements_null_or_df(list(1, NULL))
+splutil::is_all_list_elements_null_or_df(list(data.frame()))
+splutil::is_all_list_elements_null_or_df(list(1, NULL))
 
-splutil::all_list_elements_null_or_list(list(1, NULL))
-splutil::all_list_elements_null_or_list(list(list(), NULL))
+splutil::is_all_list_elements_null_or_list(list(1, NULL))
+splutil::is_all_list_elements_null_or_list(list(list(), NULL))
 
-splutil::all_list_elements_null_or_fully_named_list(list(list(), NULL))
-splutil::all_list_elements_null_or_fully_named_list(list(list("a" = 1), NULL))
+splutil::is_all_list_elements_null_or_fully_named_list(list(list(), NULL))
+splutil::is_all_list_elements_null_or_fully_named_list(list(list("a" = 1), NULL))
 ```

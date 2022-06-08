@@ -1,4 +1,7 @@
-## Submission
+## Resubmission
+
+* URLs corrected.
+* Title and description of package have been extensively elaborated upon.
 
 ## Test environments
 
@@ -15,6 +18,9 @@ Notes:
 Maintainer: 'Richard Aubrey White <sykdomspulsen@fhi.no>'
 
 New submission
+
+Possibly misspelled words in DESCRIPTION:
+  unnesting (13:21)
 
 ## Downstream dependencies
 

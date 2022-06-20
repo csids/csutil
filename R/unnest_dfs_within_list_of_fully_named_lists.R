@@ -1,4 +1,10 @@
 #' Unnest data.frames within fully named list
+#'
+#' Consider the situation where a function returns a list containing two data.frames.
+#' If this function is called repeatedly and the return values are stored in a list,
+#' we will have a list of fully named lists (each of which contains a data.frame).
+#' Typically, we want to extract the two data.frames from this nested list structure (and rbindlist them).
+#'
 #' @param x A list of fully named lists (which then contain data.frames)
 #' @param returned_name_when_dfs_are_not_nested When x is a single list of data.frames, what name should be returned?
 #' @param ... parameters passed to data.table::rbindlist
@@ -31,6 +37,7 @@
 #'   returned_name_when_dfs_are_not_nested = "NAME",
 #'   fill = TRUE
 #' )
+#' @return Fully named list, each element containing a data.table.
 #' @export
 unnest_dfs_within_list_of_fully_named_lists <- function(x, returned_name_when_dfs_are_not_nested = "data", ...){
   if(!inherits(x, "list")) return(NULL)

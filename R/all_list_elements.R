@@ -1,10 +1,14 @@
 #' Is this a fully named list?
+#'
+#' Checks if `x` is a list with each element named.
+#'
 #' @param x An object
 #' @examples
 #' is_fully_named_list(list())
 #' is_fully_named_list(list(1))
 #' is_fully_named_list(list("a"=1))
 #' is_fully_named_list(list("a"=1, 2))
+#' @return Boolean.
 #' @export
 is_fully_named_list <- function(x){
   if(inherits(x, "list")){
@@ -21,6 +25,9 @@ is_fully_named_list <- function(x){
 }
 
 #' Are all elements in a list null or data.frames?
+#'
+#' Checks if A) `x` is a list, B) All elements in `x` are either null or data.frame.
+#'
 #' @param x An object
 #' @examples
 #' is_all_list_elements_null_or_df(data.frame())
@@ -28,6 +35,7 @@ is_fully_named_list <- function(x){
 #' is_all_list_elements_null_or_df(list(1, NULL))
 #' is_all_list_elements_null_or_df(list(data.frame(), NULL))
 #' is_all_list_elements_null_or_df(list("a"=1, 2))
+#' @return Boolean.
 #' @export
 is_all_list_elements_null_or_df <- function(x){
   if(!inherits(x, "list")) return(FALSE)
@@ -40,6 +48,9 @@ is_all_list_elements_null_or_df <- function(x){
 }
 
 #' Are all elements in a list null or lists?
+#'
+#' Checks if A) `x` is a list, B) All elements in `x` are either null or list.
+#'
 #' @param x An object
 #' @examples
 #' is_all_list_elements_null_or_list(data.frame())
@@ -47,6 +58,7 @@ is_all_list_elements_null_or_df <- function(x){
 #' is_all_list_elements_null_or_list(list(1, NULL))
 #' is_all_list_elements_null_or_list(list(list(), NULL))
 #' is_all_list_elements_null_or_list(list("a"=1, 2))
+#' @return Boolean.
 #' @export
 is_all_list_elements_null_or_list <- function(x){
   if(!inherits(x, "list")) return(FALSE)
@@ -59,6 +71,11 @@ is_all_list_elements_null_or_list <- function(x){
 }
 
 #' Are all elements in a list null or fully named lists?
+#'
+#' Checks if A) `x` is a list, B) All elements in `x` are either null or fully named lists.
+#'
+#' Fully named lists are lists with each element having a name.
+#'
 #' @param x An object
 #' @examples
 #' is_all_list_elements_null_or_fully_named_list(data.frame())
@@ -67,6 +84,7 @@ is_all_list_elements_null_or_list <- function(x){
 #' is_all_list_elements_null_or_fully_named_list(list(list(), NULL))
 #' is_all_list_elements_null_or_fully_named_list(list(list("a" = 1), NULL))
 #' is_all_list_elements_null_or_fully_named_list(list("a"=1, 2))
+#' @return Boolean.
 #' @export
 is_all_list_elements_null_or_fully_named_list <- function(x){
   if(!inherits(x, "list")) return(FALSE)

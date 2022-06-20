@@ -1,3 +1,8 @@
+# splutil 2022.6.20
+
+- Submitted to CRAN
+- Added additional documentation.
+
 # splutil 2022.6.8
 
 - Submitted to CRAN

@@ -9,8 +9,11 @@ is_fully_named_list(x)
 \arguments{
 \item{x}{An object}
 }
+\value{
+Boolean.
+}
 \description{
-Is this a fully named list?
+Checks if `x` is a list with each element named.
 }
 \examples{
 is_fully_named_list(list())

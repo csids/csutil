@@ -17,8 +17,14 @@ unnest_dfs_within_list_of_fully_named_lists(
 
 \item{...}{parameters passed to data.table::rbindlist}
 }
+\value{
+Fully named list, each element containing a data.table.
+}
 \description{
-Unnest data.frames within fully named list
+Consider the situation where a function returns a list containing two data.frames.
+If this function is called repeatedly and the return values are stored in a list,
+we will have a list of fully named lists (each of which contains a data.frame).
+Typically, we want to extract the two data.frames from this nested list structure (and rbindlist them).
 }
 \examples{
 x <- list(

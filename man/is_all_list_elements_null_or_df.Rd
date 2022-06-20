@@ -9,8 +9,11 @@ is_all_list_elements_null_or_df(x)
 \arguments{
 \item{x}{An object}
 }
+\value{
+Boolean.
+}
 \description{
-Are all elements in a list null or data.frames?
+Checks if A) `x` is a list, B) All elements in `x` are either null or data.frame.
 }
 \examples{
 is_all_list_elements_null_or_df(data.frame())

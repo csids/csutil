@@ -9,8 +9,14 @@ is_all_list_elements_null_or_fully_named_list(x)
 \arguments{
 \item{x}{An object}
 }
+\value{
+Boolean.
+}
 \description{
-Are all elements in a list null or fully named lists?
+Checks if A) `x` is a list, B) All elements in `x` are either null or fully named lists.
+}
+\details{
+Fully named lists are lists with each element having a name.
 }
 \examples{
 is_all_list_elements_null_or_fully_named_list(data.frame())

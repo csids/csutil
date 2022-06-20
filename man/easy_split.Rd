@@ -2,19 +2,27 @@
 % Please edit documentation in R/easy_split.R
 \name{easy_split}
 \alias{easy_split}
-\title{Easy split}
+\title{Split a vector into a list of vectors}
 \usage{
 easy_split(x, size_of_each_group = NULL, number_of_groups = NULL)
 }
 \arguments{
-\item{x}{The variable to be split}
+\item{x}{The vector to be split}
 
 \item{size_of_each_group}{If you want to split `x` into a number of groups, each of `size_of_each_group` size}
 
 \item{number_of_groups}{How many equally sized groups do you want?}
 }
+\value{
+A list containing equally sized vectors.
+}
 \description{
-Easy split
+Easily split a list into a list of equally sized vectors.
+}
+\details{
+You can either specify the length of the list (via `number_of_groups`) or
+the length of the equally sized vectors within each list element (via `size_of_each_group`).
+The last element of the list can be shorter than the other elements.
 }
 \examples{
 easy_split(letters[1:20], size_of_each_group = 3)

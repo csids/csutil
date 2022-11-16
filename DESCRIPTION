@@ -2,8 +2,7 @@ Package: csutil
 Title: Utility Functions for Common Base-R Problems Relating to Lists
 Version: 2022.6.8
 Authors@R: c(
-  person(c("Richard","Aubrey"), "White", email = "sykdomspulsen@fhi.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726")),
-  person(given = "Folkehelseinstituttet", role = c("cph"))
+  person(c("Richard","Aubrey"), "White", email = "sykdomspulsen@fhi.no", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-6747-1726"))
   )
 Description: Utility functions that help with common base-R problems relating to lists.
     Lists in base-R are very flexible. This package provides functions to quickly and easily

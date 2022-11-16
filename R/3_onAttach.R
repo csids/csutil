@@ -2,16 +2,16 @@
 #' @importFrom magrittr %>%
 .onAttach <- function(libname, pkgname) {
     version <- tryCatch(
-      utils::packageDescription("splutil", fields = "Version"),
+      utils::packageDescription("csutil", fields = "Version"),
       warning = function(w){
         1
       }
     )
 
   packageStartupMessage(paste0(
-    "splutil ",
+    "cstil ",
     version,
     "\n",
-    "https://docs.sykdomspulsen.no/splutil/"
+    "https://www.csids.no/csutil/"
   ))
 }

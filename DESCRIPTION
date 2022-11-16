@@ -1,4 +1,4 @@
-Package: splutil
+Package: csutil
 Title: Utility Functions for Common Base-R Problems Relating to Lists
 Version: 2022.6.8
 Authors@R: c(
@@ -13,8 +13,8 @@ Description: Utility functions that help with common base-R problems relating to
     groups, and the unnesting of data.frames within fully named lists.
 Depends: R (>= 3.3.0)
 License: MIT + file LICENSE
-URL: https://docs.sykdomspulsen.no/splutil/, https://github.com/sykdomspulsen-org/splutil
-BugReports: https://github.com/sykdomspulsen-org/splutil/issues
+URL: https://www.csids.no/csutil/, https://github.com/csids/csutil
+BugReports: https://github.com/csids/csutil/issues
 Encoding: UTF-8
 Imports: data.table,
     magrittr,

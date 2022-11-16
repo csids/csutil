@@ -1,10 +1,10 @@
 ---
-title: "Introduction to splutil"
+title: "Introduction to csutil"
 author: "Richard Aubrey White"
 date: "2022-04-28"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to splutil}
+  %\VignetteIndexEntry{Introduction to csutil}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -19,8 +19,8 @@ knitr::opts_chunk$set(
 ## Splitting
 
 ```{r}
-splutil::easy_split(letters[1:20], size_of_each_group = 3)
-splutil::easy_split(letters[1:20], number_of_groups = 3)
+csutil::easy_split(letters[1:20], size_of_each_group = 3)
+csutil::easy_split(letters[1:20], number_of_groups = 3)
 ```
 
 ## Unnesting data.frames
@@ -38,21 +38,21 @@ x <- list(
   )
 )
 print(x)
-splutil::unnest_dfs_within_list_of_fully_named_lists(x)
+csutil::unnest_dfs_within_list_of_fully_named_lists(x)
 ```
 
 ## Describing lists
 
 ```{r}
-splutil::is_fully_named_list(list(1))
-splutil::is_fully_named_list(list("a"=1))
+csutil::is_fully_named_list(list(1))
+csutil::is_fully_named_list(list("a"=1))
 
-splutil::is_all_list_elements_null_or_df(list(data.frame()))
-splutil::is_all_list_elements_null_or_df(list(1, NULL))
+csutil::is_all_list_elements_null_or_df(list(data.frame()))
+csutil::is_all_list_elements_null_or_df(list(1, NULL))
 
-splutil::is_all_list_elements_null_or_list(list(1, NULL))
-splutil::is_all_list_elements_null_or_list(list(list(), NULL))
+csutil::is_all_list_elements_null_or_list(list(1, NULL))
+csutil::is_all_list_elements_null_or_list(list(list(), NULL))
 
-splutil::is_all_list_elements_null_or_fully_named_list(list(list(), NULL))
-splutil::is_all_list_elements_null_or_fully_named_list(list(list("a" = 1), NULL))
+csutil::is_all_list_elements_null_or_fully_named_list(list(list(), NULL))
+csutil::is_all_list_elements_null_or_fully_named_list(list(list("a" = 1), NULL))
 ```

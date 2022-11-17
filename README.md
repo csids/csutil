@@ -30,5 +30,5 @@ Save the file and restart R.
 You can now install [csverse](https://www.csids.no/packages.html) packages from our [drat repository](https://www.csids.no/drat/).
 
 ```
-install.packages("org")
+install.packages("csutil")
 ```

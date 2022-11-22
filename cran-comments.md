@@ -1,12 +1,10 @@
 ## Submission
 
-* URLs corrected.
-* Title and description of package have been extensively elaborated upon.
-
 ## Test environments
 
 * local Ubuntu 20.04 install, R 4.1.3
 * rhub
+* win-builder
 
 ## R CMD check results
 

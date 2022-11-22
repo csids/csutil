@@ -1,4 +1,4 @@
-## Resubmission
+## Submission
 
 * URLs corrected.
 * Title and description of package have been extensively elaborated upon.
@@ -15,7 +15,7 @@
 Notes: 
 
 * checking CRAN incoming feasibility ... NOTE
-Maintainer: 'Richard Aubrey White <sykdomspulsen@fhi.no>'
+Maintainer: 'Richard Aubrey White <hello@rwhite.no>'
 
 New submission
 

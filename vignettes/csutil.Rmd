@@ -1,10 +1,10 @@
 ---
-title: "Introduction to csutil"
+title: "Intro to csutil"
 author: "Richard Aubrey White"
 date: "2022-04-28"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to csutil}
+  %\VignetteIndexEntry{Intro to csutil}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

@@ -4,7 +4,7 @@
 
 [csutil](https://www.csids.no/csutil/) contains helpful functions to help with common base-R problems.
 
-Read the introduction vignette [here](http://www.csids.no/csutil/articles/csutil.html) or run `help(package="csutil")`.
+Read the introduction vignette [here](https://www.csids.no/csutil/articles/csutil.html) or run `help(package="csutil")`.
 
 ## csverse
 

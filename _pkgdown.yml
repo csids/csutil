@@ -13,9 +13,6 @@ template:
 #   bg: "#393c61"
 
 authors:
-  Folkehelseinstituttet:
-    href: "https://www.fhi.no"
-    html: "<img src='man/figures/fhi.png' width=72>"
   footer:
     roles: [cre, aut]
     text: "Crafted by"

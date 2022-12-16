@@ -1,4 +1,7 @@
-## Submission
+## Resubmission
+
+- Fixed LICENSE file and DESCRIPTION file to list CSIDS as the copyright holder.
+- Removed "Utility functions for" at the start of the title.
 
 ## Test environments
 

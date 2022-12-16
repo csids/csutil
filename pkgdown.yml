@@ -1,0 +1,10 @@
+pandoc: 2.19.2
+pkgdown: 2.0.2
+pkgdown_sha: ~
+articles:
+  csutil: csutil.html
+last_built: 2022-12-16T07:06Z
+urls:
+  reference: https://docs.sykdomspulsen.no/csutil/reference
+  article: https://docs.sykdomspulsen.no/csutil/articles
+

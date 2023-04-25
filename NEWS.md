@@ -1,6 +1,7 @@
 # Version 2023.4.25
 
 - `apply_fn_via_hash_table` extracts the unique input values, applies the given function to it to create a hash table (containing unique input/output combinations), and then matches the original input to the hash table to obtain the desired output. This can dramatically speed up computation if there is a lot of data and a limited amount of unique values.
+- Submitted to CRAN
 
 # Version 2022.6.20
 

@@ -1,12 +1,12 @@
 ---
 title: "Intro to csutil"
-author: "Richard Aubrey White"
-date: "2022-04-28"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Intro to csutil}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include = FALSE}
@@ -56,3 +56,29 @@ csutil::is_all_list_elements_null_or_list(list(list(), NULL))
 csutil::is_all_list_elements_null_or_fully_named_list(list(list(), NULL))
 csutil::is_all_list_elements_null_or_fully_named_list(list(list("a" = 1), NULL))
 ```
+
+## Apply a function via hash table
+
+This function extracts the unique input values, applies the given function to it to create a hash table (containing unique input/output combinations), and then matches the original input to the hash table to obtain the desired output.
+
+This can dramatically speed up computation if there is a lot of data and a limited amount of unique values.
+
+```{r}
+input <- rep(seq(as.Date("2000-01-01"), as.Date("2020-01-01"), 1), 1000)
+a1 <- Sys.time()
+z <- format(input, "%Y")
+a2 <- Sys.time()
+a2 - a1
+
+b1 <- Sys.time()
+z <- csutil::apply_fn_via_hash_table(
+  input,
+  format,
+  "%Y"
+)
+b2 <- Sys.time()
+b2 - b1
+```
+
+
+
